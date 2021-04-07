@@ -1,4 +1,4 @@
-# ImportExport_Bacpac_Automation
+# Export_Bacpac_Automation
 # Important:-    Test the solution thoroughly before trying it on Production 
 # Description:-  The solution will Export\BACPAC multiple databases from multiple servers and store in individual directories by the name of the target servers.
 # Used Case:-        The solution can be used during migration project\Taking Adhoc Backup for databases for restoration on DEV\QA
@@ -15,3 +15,9 @@
 8.  Run the Powershell Script Export_BACPAC_All_Databases
 9.  Solution can be further modified if you want the BACPAC for specified databases
 10.  Script will take bacpac in the folder C:\Bacpac\SqlPackage\files and update the tables with the location,time taken and size of databases
+
+# Import_Bacpac_Automation
+1. Import_Bacpac_AllDB.ps1 script will restore the databases on the remote server
+2. Script will read the list of databases to restore from the table [TBL_BACPAC_LOCATIONS]
+3. Script will read the credentail to connect to remote server and perform the restore of bacpac
+4. After restoration the script will check the status
