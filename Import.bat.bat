@@ -1,1 +1,0 @@
-"C:\Program Files (x86)\Microsoft SQL Server\140\DAC\bin\sqlpackage.exe" /a:Import /sf:%1 /tsn:%2 /tdn:%3 /tu:%4 /tp:%5 >>C:\Infosys\SqlPackage\log\Import.Log
