@@ -7,27 +7,6 @@
 ##Create a CSV or Txt File containing list of Azure SQL Logical Servers
 ##Create database GET_AZURESQL_STATS
 ##Create a table to store the credential in database GET_AZURESQL_STATS
-##Code Reusability Support - Yes
-<#
-
-CREATE DATABASE GET_AZURE_STATS
-GO
-
-SET ANSI_NULLS ON
-GO
-
-SET QUOTED_IDENTIFIER ON
-GO
-
-CREATE TABLE [dbo].[TBL_CREDENTIAL](
-	[LOGICAL_SERVER] [varchar](400) NULL,
-	[USERNAME] [varchar](100) NULL,
-	[PWD] [varchar](200) MASKED WITH (FUNCTION = 'default()') NULL
-) ON [PRIMARY]
-GO
-
-#>
-
 cls ##Clearing Screen
 ##Reading the Azure Logical Servers from list##
 ##Create a text File with the list of servers on which backup has to be taken
