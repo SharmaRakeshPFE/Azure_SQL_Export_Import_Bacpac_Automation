@@ -17,7 +17,9 @@
 10.  Script will take bacpac in the folder C:\Bacpac\SqlPackage\files and update the tables with the location,time taken and size of databases
 
 # Import_Bacpac_Automation
+
 1. Import_Bacpac_AllDB.ps1 script will restore the databases on the remote server
 2. Script will read the list of databases to restore from the table [TBL_BACPAC_LOCATIONS]
 3. Script will read the credentail to connect to remote server and perform the restore of bacpac
 4. After restoration the script will check the status
+4. reate a batch file with below parameters and ensure correct location of sqlpackage.exe "C:\Program Files (x86)\Microsoft SQL Server\140\DAC\bin\sqlpackage.exe" /a:Import /sf:%1 /tsn:%2 /tdn:%3 /tu:%4 /tp:%5 >>C:\Infosys\SqlPackage\log\Import.Log
