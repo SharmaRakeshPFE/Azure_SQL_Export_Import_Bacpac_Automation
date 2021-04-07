@@ -1,4 +1,4 @@
-﻿<#
+<#
 ##Script to take backup (bacpac) for multiple databases from multiple servers in their respective folders
 ##Author - Rakesh Sharma
 ## Ver 1.0
@@ -54,7 +54,7 @@ $Repositorydb='GET_AZURESQL_STATS'
                                                    ##Write-Host $ComandoOut
                                                    Write-Host "####################################" 
                                                    Write-Host "Importing Bacpac for " $TARGETDB  
-                                                   ####Invoke-Expression -Command $ComandoOut | Out-Null
+                                                   Invoke-Expression -Command $ComandoOut | Out-Null
                                                    Write-Host "Bacpac Import completed for " $TARGETDB 
                                                    Write-Host "####################################" 
 
