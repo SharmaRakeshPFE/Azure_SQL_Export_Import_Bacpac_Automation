@@ -1,4 +1,5 @@
 <#
+
 ##Script to take backup (bacpac) for multiple databases from multiple servers in their respective folders
 ##Author - Rakesh Sharma
 ## Ver 1.0
@@ -7,6 +8,7 @@
 ##Create a CSV or Txt File containing list of Azure SQL Logical Servers
 ##Create database GET_AZURESQL_STATS
 ##Create a table to store the credential in database GET_AZURESQL_STATS
+
 #>
 
 cls ##Clearing Screen
