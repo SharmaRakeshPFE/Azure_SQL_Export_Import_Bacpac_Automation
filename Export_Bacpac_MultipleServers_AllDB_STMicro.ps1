@@ -1,4 +1,4 @@
-##Script to take backup (bacpac) for multiple databases from multiple servers in their respective folders
+# Script to take backup (bacpac) for multiple databases from multiple servers in their respective folders
 ##Author - Rakesh Sharma
 ## Ver 1.0
 ##How to use##
